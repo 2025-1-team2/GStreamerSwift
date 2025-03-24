@@ -22,3 +22,6 @@ GStreamer.framework Templates
 (base) ➜  ~ ls ~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework
 Commands  GStreamer Headers   Libraries Resources Versions
 ```
+
+- 설치 오류 (링크 참고: https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/396 )
+
