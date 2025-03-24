@@ -25,3 +25,7 @@ Commands  GStreamer Headers   Libraries Resources Versions
 
 - 설치 오류 (링크 참고: https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/396 )
 
+2. Xcode Build Settings
+- Header Search Path: `"$(HOME)/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers"`
+- Framework search path: `"$(HOME)/Library/Developer/GStreamer/iPhone.sdk"`
+- Other Linker Flags: `-lresolv` and `-lc++`
