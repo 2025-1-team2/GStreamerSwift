@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		076F47712D920E6C001E2D66 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 076F47702D920E63001E2D66 /* libiconv.tbd */; };
+		076F47732D920F19001E2D66 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076F47722D920F19001E2D66 /* GStreamer.framework */; };
+		076F47742D920F19001E2D66 /* GStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 076F47722D920F19001E2D66 /* GStreamer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		076F47402D91EC30001E2D66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +29,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		076F47752D920F19001E2D66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				076F47742D920F19001E2D66 /* GStreamer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		076F472F2D91EC2F001E2D66 /* GStreamerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GStreamerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076F473F2D91EC30001E2D66 /* GStreamerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GStreamerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		076F47492D91EC30001E2D66 /* GStreamerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GStreamerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		076F47702D920E63001E2D66 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		076F47722D920F19001E2D66 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../../Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076F47712D920E6C001E2D66 /* libiconv.tbd in Frameworks */,
+				076F47732D920F19001E2D66 /* GStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +102,7 @@
 				076F47312D91EC2F001E2D66 /* GStreamerSwift */,
 				076F47422D91EC30001E2D66 /* GStreamerSwiftTests */,
 				076F474C2D91EC30001E2D66 /* GStreamerSwiftUITests */,
+				076F476F2D920E62001E2D66 /* Frameworks */,
 				076F47302D91EC2F001E2D66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +117,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		076F476F2D920E62001E2D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				076F47722D920F19001E2D66 /* GStreamer.framework */,
+				076F47702D920E63001E2D66 /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +136,7 @@
 				076F472B2D91EC2F001E2D66 /* Sources */,
 				076F472C2D91EC2F001E2D66 /* Frameworks */,
 				076F472D2D91EC2F001E2D66 /* Resources */,
+				076F47752D920F19001E2D66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
